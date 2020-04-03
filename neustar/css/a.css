@@ -1,0 +1,171 @@
+a {
+    text-decoration: none;
+}
+body {
+    display: flex;
+    flex-direction: column;
+}
+h1 {
+    font-size: 1rem;
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+        font-size: 16px;
+    font-size: 1rem;
+}
+.carret {
+    position: absolute;
+    left: -24px;
+    left: -1.5rem;
+    display: block;
+    width: 16px;
+    width: 1rem;
+    color: #007593;
+}
+.carret.-green {
+    color: #6dc53c;
+}
+.layout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 0 8vw;
+    min-height: 100%;
+    background-color: #151d21;
+    color: #cdcfcb;
+}
+
+.h1__prefix {
+    display: inline-block;
+    width: 1rem;
+}
+.title {
+    font-weight: 700;
+}
+html {
+    box-sizing: border-box;
+    height: 100%;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Fira Mono', monospace;
+    line-height: 2;
+
+    @media (min-width: 1134px) {
+        font-size: 17px;
+    }
+
+    @media (min-width: 1200px) {
+        font-size: 18px;
+    }
+
+    @media (min-width: 1333px) {
+        font-size: 20px;
+    }
+
+    @media (min-width: 1466px) {
+        font-size: 22px;
+    }
+
+    @media (min-width: 1600px) {
+        font-size: 24px;
+    }
+
+    @media (min-width: 1733px) {
+        font-size: 26px;
+    }
+
+    @media (min-width: 1866px) {
+        font-size: 28px;
+    }
+
+    @media (min-width: 2000px) {
+        font-size: 30px;
+    }
+
+    @media (min-width: 2133px) {
+        font-size: 32px;
+    }
+
+    @media (min-width: 2400px) {
+        font-size: 36px;
+    }
+}
+input {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    border: none;
+    background-color: transparent;
+    color: #6dc53c;
+    -webkit-transition: color .1s ease .5s;
+    transition: color .1s ease .5s;
+
+    &:focus {
+        outline: none;
+        color: inherit;
+        transition: none;
+    }
+}
+input:not([type=range]), label, select, textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
+
+::-webkit-input-placeholder {
+    color: color(var(--gray-light) a(.5));
+}
+
+::-moz-placeholder {
+    color: color(var(--gray-light) a(.5));
+}
+
+:-ms-input-placeholder {
+    color: color(var(--gray-light) a(.5));
+}
+
+:-moz-placeholder {
+    color: color(var(--gray-light) a(.5));
+}
+::selection {
+    background-color: var(--blue);
+}
+
+::-moz-selection {
+    background-color: var(--blue);
+}
+* {
+    position: relative;
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    color: inherit;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    line-height: inherit;
+
+    &:after,
+    &:before {
+        box-sizing: inherit;
+    }
+}
+
+/* From reboot.css: speed up any delay that might exist for touch users */
+a,
+button,
+input:not([type=range]),
+label,
+select,
+textarea {
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+}
